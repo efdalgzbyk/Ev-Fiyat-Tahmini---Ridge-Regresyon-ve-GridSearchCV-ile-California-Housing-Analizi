@@ -3,7 +3,7 @@
 
 ## 🇬🇧 English README
 
-```markdown
+
 # House Price Prediction – Ridge Regression with California Housing Dataset
 
 This project aims to predict housing prices in the state of California using machine learning techniques. A Ridge Regression model is trained on real-world housing data, focusing on regression basics, hyperparameter tuning, and performance visualization.
