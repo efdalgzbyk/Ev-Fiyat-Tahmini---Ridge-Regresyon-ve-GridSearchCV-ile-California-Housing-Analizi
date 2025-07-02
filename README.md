@@ -75,6 +75,8 @@ To execute the script, run:
 python house_price_prediction.py
 ```
 
+
+
 # Ev Fiyat Tahmini – Ridge Regresyon ile California Housing Dataset
 
 Bu proje, ABD'nin California eyaletine ait konut verilerini kullanarak ev fiyatlarını tahmin etmeyi amaçlamaktadır. Ridge regresyon modeli ile eğitilen bu proje, temel makine öğrenmesi regresyon algoritmalarını öğrenmek, hiperparametre optimizasyonu yapmak ve model performansını görselleştirmek isteyenler için pratik bir örnektir.
