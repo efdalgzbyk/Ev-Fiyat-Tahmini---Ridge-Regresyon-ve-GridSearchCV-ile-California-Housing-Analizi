@@ -73,3 +73,75 @@ To execute the script, run:
 
 ```bash
 python house_price_prediction.py
+```
+
+# Ev Fiyat Tahmini – Ridge Regresyon ile California Housing Dataset
+
+Bu proje, ABD'nin California eyaletine ait konut verilerini kullanarak ev fiyatlarını tahmin etmeyi amaçlamaktadır. Ridge regresyon modeli ile eğitilen bu proje, temel makine öğrenmesi regresyon algoritmalarını öğrenmek, hiperparametre optimizasyonu yapmak ve model performansını görselleştirmek isteyenler için pratik bir örnektir.
+
+---
+
+## 📌 Kullanılan Veri Seti
+
+Bu projede, `sklearn.datasets` içindeki `fetch_california_housing()` fonksiyonu kullanılarak yüklenen California Housing veri seti kullanılmıştır. Veri seti aşağıdaki özellikleri içerir:
+
+- Ortalama oda sayısı
+- Ortalama hane geliri
+- Suç oranı
+- Okul yakınlığı
+- Nüfus yoğunluğu
+- ve daha fazlası...
+
+Hedef değişken: **Ev fiyatı (binlerce dolar cinsinden)**
+
+---
+
+## 🔧 Kullanılan Teknolojiler ve Kütüphaneler
+
+- Python 3.x
+- scikit-learn
+- pandas
+- matplotlib
+- seaborn
+- joblib
+
+---
+
+## 🚀 Proje Aşamaları
+
+1. **Veri Yükleme ve İnceleme:**  
+   California konut verisi yüklenir ve pandas DataFrame'e dönüştürülür. Özellikler incelenir ve korelasyon haritası çıkarılır.
+
+2. **Eğitim ve Test Bölme:**  
+   Veri seti %80 eğitim ve %20 test olarak ikiye ayrılır.
+
+3. **Model Eğitimi (Ridge Regresyon):**  
+   Ridge regresyon modeli, GridSearchCV ile `alpha` hiperparametresi için optimize edilir.
+
+4. **Model Değerlendirme:**  
+   Modelin doğruluğu R² skoru ve Ortalama Kare Hatası (MSE) ile ölçülür.
+
+5. **Tahmin Görselleştirmesi:**  
+   Gerçek ve tahmin edilen fiyatlar bir grafikte karşılaştırılır (`price_prediction_plot.png`).
+
+6. **Model Kaydetme:**  
+   Eğitilen model `.pkl` dosyasına (`house_price_model.pkl`) kaydedilir.
+
+---
+
+## 📁 Üretilen Dosyalar
+
+- `house_price_prediction.py`: Ana proje dosyası
+- `feature_correlation.png`: Korelasyon ısı haritası
+- `price_prediction_plot.png`: Tahmin grafiği
+- `house_price_model.pkl`: Eğitilmiş model
+
+---
+
+## 💻 Çalıştırma
+
+Aşağıdaki komutu kullanarak projeyi çalıştırabilirsiniz:
+
+```bash
+python house_price_prediction.py
+
